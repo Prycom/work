@@ -1,0 +1,91 @@
+{
+    "component": "sberForm",
+    "props": {
+        "businessName": "Карточка сотрудника",
+        "upstreamRoute": "https://some-sber-api/business-anal/upload",
+        "innerComponents": [
+            {
+                "component": "rowListComponent",
+                "props": {
+                    "innerComponents": [
+                        {
+                            "component": "input",
+                            "props": {
+                                "label": "Имя",
+                                "placeholder": "Имя",
+                                "value": ""
+                            }
+                        },
+                        {
+                            "component": "input",
+                            "props": {
+                                "label": "Фамилия",
+                                "placeholder": "Фамилия",
+                                "value": ""
+                            }
+                        },
+                        {
+                            "component": "input",
+                            "props": {
+                                "label": "Отчество",
+                                "placeholder": "Отчество",
+                                "value": ""
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "component": "rowListComponent",
+                "props": {
+                    "innerComponents": [
+                        {
+                            "component": "multiselect",
+                            "props": {
+                                "dataSource": "https://sber-service/get-count",
+                                "options": [],
+                                "value": ""
+                            }
+                        },
+                        {
+                            "component": "select",
+                            "props": {
+                                "options": ["Мужик", "Девушка"],
+                                "value": "Мужик"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "component": "rowListComponent",
+                "props": {
+                    "innerComponents": [
+                        {
+                            "component": "desc",
+                            "props": {
+                                "placeholder": "Описание...",
+                                "label": "",
+                                "value": ""
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "component": "rowListComponent",
+                "props": {
+                    "innerComponents": [
+                        {
+                            "component": "submit",
+                            "props": {
+                                "text": "Отправить",
+                                "upstreamRoute": "https://some-sber-api/business-anal/upload"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

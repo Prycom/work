@@ -1,0 +1,62 @@
+{
+    "formData": {
+        "businessName": "Карточка сотрудника",
+        "upstreamRoute": "https://some-sber-api/business-anal/upload"
+    },
+    "data": {
+        "employeeName": "Марья",
+        "employeeSurname": "Рубинштейн",
+        "employeeFathername": "Олеговна",
+        "dataOptions": [ "ноль", "целковый", "чекушка", "жучок", "дурачок", "ВСЕ" ]
+    },
+    "rows":{
+        "0": {
+            "name": {
+                "type" : "input",
+                "label": "Имя",
+                "placeholder": "Имя",
+                "data": "employeeName"
+            },
+            "surname":{
+                "type" : "input",
+                "label": "Фамилия",
+                "placeholder": "Фамилия",
+                "data": "employeeSurname"
+            },
+            "fatherName": {
+                "type" : "input",
+                "label": "Отчество",
+                "placeholder": "Отчество",
+                "data": "employeeFathername"
+            }
+        },
+        "1": {
+            "multiselect": {
+                "type" : "multiselect",
+                "label": "",
+                "options": "",
+                "data": "dataOptions"
+            },
+            "select": {
+                "type": "select",
+                "label": "",
+                "data": "",
+                "options": ["Мужик", "Девушка"]
+            }
+        },
+        "2": {
+            "desc": {
+                "type": "textarea",
+                "placeholder": "Описание...",
+                "label": "",
+                "data": ""
+            }
+        },
+        "3": {
+            "submit": {
+                "type": "btn",
+                "text": "Отправить"
+            }
+        }
+    }
+}
