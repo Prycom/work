@@ -1,0 +1,7 @@
+{
+    "gitSystems": [
+        {"id": 1, "value": "Github"},
+        {"id": 2, "value": "Gitlab"},
+        {"id": 3, "value": "Bitbucket"}
+    ]
+}

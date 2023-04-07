@@ -1,0 +1,50 @@
+{
+    "formData": {
+        "formName": "Заявка на доступ",
+        "uploadRoute": "https://some-sber-api/business-anal/upload"
+    },
+    "rows": {
+        "0":{
+            "employeeID": {
+                "type": "input",
+                "label": "Табельный номер",
+                "placeholder": "Табельный номер",
+                "data": "data/employeeID"
+            },
+            "employeeDepartment": {
+                "type": "select",
+                "label": "Блок",
+                "urlToData": "sber/data/get_blocks",
+                "data": "data/employeeDepartment"
+            }
+        },
+        "1": {
+            "employeeRoles": {
+                "type": "multiselect",
+                "label": "Роли",
+                "urlToData": "sber/data/roles",
+                "data": "data/employeeRoles"
+            },
+            "gitSystem": {
+                "type": "select",
+                "label": "Git система",
+                "urlToData": "sber/data/git_systems",
+                "data": "data/gitSystem"
+            }
+        },
+        "2" : {
+            "description": {
+                "type": "textarea",
+                "placeholder": "Комментарий к заявке",
+                "label": "Описание",
+                "data": "data/description"
+            }
+        },
+        "3": {
+            "submit": {
+                "type": "button",
+                "text": "Отправить"
+            }
+        }
+    }
+}
